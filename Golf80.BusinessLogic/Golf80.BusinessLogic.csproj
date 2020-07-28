@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Golf80.BusinessEntities\Golf80.BusinessEntities.csproj" />
+    <ProjectReference Include="..\Golf80.DataEntities\Golf80.DataEntities.csproj" />
+    <ProjectReference Include="..\Golf80.Infrastructure\Golf80.DataContext.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+  </ItemGroup>
+
+</Project>
