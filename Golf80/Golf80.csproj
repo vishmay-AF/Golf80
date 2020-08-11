@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>2c17e24d-9895-4be9-9942-e56ea684b124</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Golf80.Infrastrucure.Core" Version="1.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -18,7 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Golf80.BusinessLogic\Golf80.BusinessLogic.csproj" />
-    <ProjectReference Include="..\Golf80.Infrastrucure.Core\Golf80.Infrastrucure.Core.csproj" />
   </ItemGroup>
 
 </Project>

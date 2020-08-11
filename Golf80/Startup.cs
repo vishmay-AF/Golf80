@@ -70,7 +70,7 @@ namespace Golf80
             }
             app.UseMiddleware<ErrorHandlingMiddleware>();
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
            
             app.UseRouting();

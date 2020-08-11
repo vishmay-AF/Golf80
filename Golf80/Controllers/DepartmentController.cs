@@ -40,7 +40,7 @@ namespace Golf80.Controllers
         [ProducesResponseType(typeof(ServiceResponse<DepartmentViewModel>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ApiConventionNameMatch(ApiConventionNameMatchBehavior.Prefix)]
-        public async Task<IActionResult> GetAllAsync(int id)
+        public async Task<IActionResult> GetAsync(int id)
         {
             return Ok(
                 ServiceResponseHelper
